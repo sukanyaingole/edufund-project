@@ -1,0 +1,13 @@
+.selected {
+  background-color: #5a6268;
+}
+
+.selected a {
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}

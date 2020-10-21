@@ -1,0 +1,40 @@
+.data-etfs {
+  height: 100vh;
+  overflow-y: scroll;
+  background: #4da6a6;
+  color: black;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.tableData {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.tableData thead th {
+  background-color: #fff;
+}
+
+.stocksTable thead th {
+  position: sticky;
+  top: 0;
+}
+
+.showTable {
+  display: block;
+  background-color: white;
+}
+
+.selected {
+  background-color: #99cccc;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+}
+a {
+  cursor: pointer;
+}
