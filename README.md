@@ -26,6 +26,12 @@ Edufund fullstack test App
 7. npm run migrate:symbol
 8. npm start
 
+## Shortcut to run app
+
+1. `npm run install:sub`
+2. `npm start`
+   Note: migration will have to run separately based on requirements
+
 ## To run app with Docker
 
 run `docker-compose up` from root directory
