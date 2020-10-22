@@ -4,7 +4,6 @@ const jwtExpirySeconds = 3000000;
 
 const signIn = (req, res) => {
   const { deviceDetails } = req.body;
-  console.log("signIn ", req);
   if (!deviceDetails) {
     return res.status(401).end();
   }
@@ -15,7 +14,6 @@ const signIn = (req, res) => {
     algorithm: "HS256",
     expiresIn: jwtExpirySeconds,
   });
-  console.log("token:", token);
 
   // set the cookie as the token string, with a similar max age as the token
   // here, the max age is in milliseconds, so we multiply by 1000
@@ -50,7 +48,6 @@ const verifyToken = (req, res) => {
     // if the token is invalid (if it has expired according to the expiry time we set on sign in),
     // or if the signature does not match
     const usableToken = token.replace("Bearer ", "");
-    console.log("verifying:", jwt.verify(usableToken, jwtKey));
     payload = jwt.verify(usableToken, jwtKey);
   } catch (e) {
     if (e instanceof jwt.JsonWebTokenError) {

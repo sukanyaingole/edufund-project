@@ -36,7 +36,6 @@ const StocksPage = () => {
 
     const date = new Date();
     date.setTime(date.getTime() + 365 * 24 * 60 * 60 * 1000);
-    console.log(date);
     setCookie("access_token", loginData.access_token, {
       path: "/",
       expires: date,
@@ -76,7 +75,6 @@ const StocksPage = () => {
         }),
       });
       const stockData = await response.json();
-      console.log("response:", stockData);
       setSelectedStock(stockData);
     } else {
       console.log("Already selected!");
