@@ -25,3 +25,8 @@ Edufund fullstack test App
 6. npm run migrate
 7. npm run migrate:symbol
 8. npm start
+
+## To run app with Docker
+
+run `docker-compose up` from root directory
+Note: Make sure to uncomment connection line in backend/db/connection.js file and mongodb data is migrated
