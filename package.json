@@ -1,0 +1,27 @@
+{
+  "name": "edufund-project",
+  "version": "1.0.0",
+  "description": "Edufund fullstack test App",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm:start:frontend\" \"npm:start:backend \" ",
+    "install:sub": "cd frontend && npm i && cd ../backend && npm i",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sukanyaingole/edufund-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sukanyaingole/edufund-project/issues"
+  },
+  "homepage": "https://github.com/sukanyaingole/edufund-project#readme"
+}

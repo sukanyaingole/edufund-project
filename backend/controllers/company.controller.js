@@ -23,7 +23,6 @@ exports.getCompanyData = async (req, res) => {
 //get Data by symbol
 exports.getCompanyDataBySymbol = (req, res) => {
   try {
-    console.log("Request", req);
     Company.findOne({ symbol: req.body.symbol }, (err, data) => {
       if (err) {
         return res.json(err);
